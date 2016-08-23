@@ -149,7 +149,7 @@ class PeopleController < ApplicationController
 
   def create
     @person = Person.create(person_params)
-    redirect_to people_path(@person)
+    redirect_to person_path(@person)
   end
 
   private
